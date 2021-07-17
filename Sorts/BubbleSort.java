@@ -5,7 +5,9 @@ import java.util.Arrays;
 /*
  * Sort - Bubble Sort
  * ------
- *  1. Swapping the numbers based on their value until the sort is acheived
+ *  1. Swaps of two adjacent elements in order to put them in right place
+ *  2. Time Complexity -> O(n^2)
+ *  3. Time Consumption -> More Time Consumption to run an algorithm.
  */
 
 public class BubbleSort {
