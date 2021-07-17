@@ -1,5 +1,7 @@
 package Searches;
 
+import Sorts.BubbleSort;
+
 public class BinarySearch {
 	
 	private static boolean binarySearchRecursion(int[] arr, int find, int left, int right) {
@@ -20,8 +22,10 @@ public class BinarySearch {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 19, 21, 22, 26, 30, 40, 50 };
-		int find = 20;
+		int[] arr = { 1, 60, 3, 4, 5, 6, 7, 8, 19, 21, 22, 26, 30, 55, 50 };
+		BubbleSort bubbleSort = new BubbleSort();
+		bubbleSort.Solution(arr);
+		int find = 60;
 		System.out.println(binarySearchRecursion(arr, find, 0 , arr.length));
 	}
 
