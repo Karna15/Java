@@ -16,26 +16,26 @@ import java.util.Arrays;
 
 public class LeftRotation {
 
-	private static int[] leftRotationDemo(int[] arr, int d) {
-		
-		int size = arr.length;
-		int[] result = new int[size];
+    private static int[] leftRotationDemo(int[] arr, int d) {
 
-		for (int oldIndex = 0; oldIndex < size; oldIndex++) {
-			int newIndex = (oldIndex + size - d) % size;
-			result[newIndex] = arr[oldIndex];
-		}
+	int size = arr.length;
+	int[] result = new int[size];
 
-		return result;
+	for (int oldIndex = 0; oldIndex < size; oldIndex++) {
+	    int newIndex = (oldIndex + size - d) % size;
+	    result[newIndex] = arr[oldIndex];
 	}
 
-	public static void main(String[] args) {
+	return result;
+    }
 
-		int arr[] = { 1, 2, 3, 4, 5 };
-		int rotation = 5;
-		int res[] = leftRotationDemo(arr, rotation);
-		System.out.println(Arrays.toString(res));
+    public static void main(String[] args) {
 
-	}
+	int arr[] = { 1, 2, 3, 4, 5 };
+	int rotation = 5;
+	int res[] = leftRotationDemo(arr, rotation);
+	System.out.println(Arrays.toString(res));
+
+    }
 
 }

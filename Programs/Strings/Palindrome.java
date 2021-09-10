@@ -11,31 +11,31 @@ package Programs.Strings;
 
 public class Palindrome {
 
-	// method 1
-	private static boolean palindromeCheck1(String ref) {
+    // method 1
+    private static boolean palindromeCheck1(String ref) {
 
-		for (int i = 0, j = ref.length() - 1; i < j; i++, j--) {
-			if (ref.charAt(i) != ref.charAt(j)) {
-				return false;
-			}
-		}
-
-		return true;
+	for (int i = 0, j = ref.length() - 1; i < j; i++, j--) {
+	    if (ref.charAt(i) != ref.charAt(j)) {
+		return false;
+	    }
 	}
 
-	// method 2 (using StringBuilder)
-	public static boolean palindromeCheck2(String ref) {
-		return (ref == null || ref.length() <= 1) || ref.equals(new StringBuilder(ref).reverse().toString());
+	return true;
+    }
+
+    // method 2 (using StringBuilder)
+    public static boolean palindromeCheck2(String ref) {
+	return (ref == null || ref.length() <= 1) || ref.equals(new StringBuilder(ref).reverse().toString());
+    }
+
+    public static void main(String[] args) {
+
+	String[] ref = { "abccba", "123321", "abcd" };
+
+	for (String value : ref) {
+	    System.out.println("Is Palindrome : " + palindromeCheck1(value));
 	}
 
-	public static void main(String[] args) {
-
-		String[] ref = { "abccba", "123321", "abcd" };
-
-		for (String value : ref) {
-			System.out.println("Is Palindrome : " + palindromeCheck1(value));
-		}
-
-	}
+    }
 
 }

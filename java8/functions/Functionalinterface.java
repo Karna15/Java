@@ -20,18 +20,18 @@ import java.util.function.Predicate;
 
 /** Predicate Demo */
 public class Functionalinterface {
-	
-	public static void main(String[] args) {
-		
-		List<String> list = Arrays.asList("Alex", "James", "Bale", "Fred");
-		
-		Predicate<String> p = (s) -> s.startsWith("J");
-		
-		for(String name:list) {
-			if(p.test(name))
-				System.out.println(name);
-		}
-		
+
+    public static void main(String[] args) {
+
+	List<String> list = Arrays.asList("Alex", "James", "Bale", "Fred");
+
+	Predicate<String> p = (s) -> s.startsWith("J");
+
+	for (String name : list) {
+	    if (p.test(name))
+		System.out.println(name);
 	}
+
+    }
 
 }

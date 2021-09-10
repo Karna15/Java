@@ -10,34 +10,34 @@ package Programs.Strings;
 
 public class StringReverse {
 
-	// method 1
-	private static String reverseDemo1(String ref) {
+    // method 1
+    private static String reverseDemo1(String ref) {
 
-		if (ref == null || ref.isEmpty()) {
-			return ref;
-		}
-
-		char[] value = ref.toCharArray();
-		for (int i = 0, j = ref.length() - 1; i < j; i++, j--) {
-			char temp = value[i];
-			value[i] = value[j];
-			value[j] = temp;
-		}
-
-		return new String(value);
+	if (ref == null || ref.isEmpty()) {
+	    return ref;
 	}
 
-	// method 2 (using StringBuilder)
-	public static StringBuilder reverseDemo2(String ref) {
-		return new StringBuilder(ref).reverse();
+	char[] value = ref.toCharArray();
+	for (int i = 0, j = ref.length() - 1; i < j; i++, j--) {
+	    char temp = value[i];
+	    value[i] = value[j];
+	    value[j] = temp;
 	}
 
-	public static void main(String[] args) {
+	return new String(value);
+    }
 
-		String ref = "123abc";
-		System.out.println(reverseDemo1(ref)); 
-		System.out.println(reverseDemo2(ref));
+    // method 2 (using StringBuilder)
+    public static StringBuilder reverseDemo2(String ref) {
+	return new StringBuilder(ref).reverse();
+    }
 
-	}
+    public static void main(String[] args) {
+
+	String ref = "123abc";
+	System.out.println(reverseDemo1(ref));
+	System.out.println(reverseDemo2(ref));
+
+    }
 
 }

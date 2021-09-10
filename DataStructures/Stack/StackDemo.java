@@ -15,22 +15,22 @@ import java.util.Stack;
 
 public class StackDemo {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Stack<String> ref = new Stack<String>();
+	Stack<String> ref = new Stack<String>();
 
-		System.out.println(ref.size());
-		ref.push("Alex");
-		ref.push("Fred");
-		System.out.println(ref.size());
-		System.out.println(ref);
-		ref.push("James");
-		System.out.println(ref.pop());
-		System.out.println(ref);
-		System.out.println(ref.peek());
-		System.out.println(ref.search("Fredi"));
-		System.out.println(ref.empty());
+	System.out.println(ref.size());
+	ref.push("Alex");
+	ref.push("Fred");
+	System.out.println(ref.size());
+	System.out.println(ref);
+	ref.push("James");
+	System.out.println(ref.pop());
+	System.out.println(ref);
+	System.out.println(ref.peek());
+	System.out.println(ref.search("Fredi"));
+	System.out.println(ref.empty());
 
-	}
+    }
 
 }

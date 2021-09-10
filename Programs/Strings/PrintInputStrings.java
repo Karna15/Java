@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class PrintInputStrings {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-		String str = sc.nextLine();
+	Scanner sc = new Scanner(System.in);
+	String str = sc.nextLine();
 
-		for (int i = 0; i < str.length(); i++) {
-			if (str.charAt(i) != ' ') {
-				System.out.println(str.charAt(i));
-			}
-		}
-
+	for (int i = 0; i < str.length(); i++) {
+	    if (str.charAt(i) != ' ') {
+		System.out.println(str.charAt(i));
+	    }
 	}
+
+    }
 
 }
