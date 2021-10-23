@@ -1,4 +1,4 @@
-package DataStructures.Graphs;
+package DataStructures.Graph;
 
 /*
  *  Traversal method

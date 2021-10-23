@@ -1,10 +1,13 @@
-package DataStructures.List;
+package DataStructures.LinkedList;
 
 /*
- * List - LinkedList
+ * LinkedList
  * ------
- *  1. Two or more items linked with each other using Node are called Linked List
- *  2. SinglyLinkedList
+ *  - Two or more items linked with each other using Node are called Linked List
+ *  - Types
+ *  	1. Singly LinkedList
+ *  	2. Doubly LinkedList
+ *  	3. Circular LinkedList
  *  - Node will have single data and pointer
  *  - First node points as head node
  */

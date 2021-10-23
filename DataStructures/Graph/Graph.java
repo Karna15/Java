@@ -1,4 +1,4 @@
-package DataStructures.Graphs;
+package DataStructures.Graph;
 
 import java.util.Arrays;
 
@@ -27,7 +27,7 @@ import java.util.Arrays;
  *  1. Shortest Path Algorithm
  */
 
-public class Graphs {
+public class Graph {
 
     public static void main(String[] args) {
 

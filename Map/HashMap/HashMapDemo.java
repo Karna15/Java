@@ -1,4 +1,4 @@
-package DataStructures.Hashing;
+package Map.HashMap;
 
 /*
  * Map - HashMap
