@@ -15,6 +15,8 @@ public class ASCII {
 
 	System.out.println((char) ((int) 'a' - 32)); // lower to upper case conversion
 	System.out.println((char) ((int) 'A' + 32)); // upper to lower case conversion
+	
+	System.out.println("Absolute int : " + Math.abs(('C' - '0') - ('A' - '0')));
 
     }
 
